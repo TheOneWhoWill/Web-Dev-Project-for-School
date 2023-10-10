@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.scoring-bar {
+    gap: 2rem;
+    width: 100%;
+    height: 5.5rem;
+    display: flex;
+    color: #fff;
+    padding: 1rem calc(calc(100% - 70rem) / 2);
+    background: #272727;
+    align-items: center;
+}
+
+.matches {
+    font-size: 0.9rem;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+#matches-found {
+    background: #39be5a;
+}
+
+#matches-left {
+    background: #ee5e5e;
+}
+
+.game {
+    display: grid;
+    padding: 1rem;
+    height: calc(100% - 5.5rem);
+    background: #29a9d3;
+    justify-content: center;
+}
+
+.cards {
+    gap: 1rem;
+    padding: 1rem;
+    display: grid;
+    width: calc(4 * 7.5rem + 5rem);
+    grid-template-columns: repeat(4, 7.5rem);
+}
+
+.card {
+    width: 7.5rem;
+    height: 10rem;
+    overflow: hidden;
+    background: #272727;
+}
+
+.card img {
+    width: 7.5rem;
+    height: 10rem;
+    object-fit: contain;
+}
